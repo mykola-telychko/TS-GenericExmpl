@@ -113,11 +113,10 @@ class Rocket<Goal, Status, Coordinates> {
   }
 }
 
-let RocketOnMoscow = new Rocket<string, boolean, Array<string>>(
-  'russian children',
-  true,
-  ['55.751244', '37.618423']
-);
+let RocketOnMoscow = new Rocket<string, boolean, Array<string>>('ruch', true, [
+  '55.751244',
+  '37.618423',
+]);
 RocketOnMoscow.echo();
 
 // Example 3: Generic Interface Implementation
